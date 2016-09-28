@@ -1,0 +1,42 @@
+Melee Specialist
+HP: 500 (+4 per level)
+HP Regen: 1.426 (+4 per level)
+Mana: 0
+Mana Regen: 0
+Attack Damage: 26
+Attack Speed: 1.43
+Q: Symbiote - Assist another allied Unit or Combat Structure, allowing you to shield them and use new Abilities.Cannot be used on another Hero's Summons. - Cooldown: 4 sec
+W: Toxic Nest - Spawn a mine that becomes active after a short time. Deals 336 (160 + 4% per level) damage and reveals the enemy for 4 seconds. Lasts 90 seconds. - Cooldown: 10 sec
+E: -
+R1: Evolve Monstrosity - Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains 5% Health and 5% Basic Attack damage, stacking up to 40 times. The Monstrosity takes 50% less damage from non-Heroic enemies.Using Symbiote on the Monstrosity allows you to control it, in addition to Symbiote's normal benefits. This Ability can be reactivated to automatically cast Symbiote on your Monstrosity. - Cooldown: 90 sec
+R2: Ultimate Evolution - Clone target allied Hero and control it for 20 seconds. Abathur has perfected the clone, granting it 20% Ability Power, 20% bonus Attack Damage, and 10% bonus Movement Speed. Cannot use their Heroic Ability. - Cooldown: 50 sec
+D: Locust Strain - Spawns a Locust to attack down the nearest lane every 15 seconds. Locusts last for 25 seconds. - Cooldown: 15 sec    
+Survival Instincts: Increases Locust's Health by 50% and duration by 40%.
+Envenomed Nest: Toxic Nests deal 75% more damage over 3 seconds.
+Pressurized Glands: Increases the range of Symbiote's Spike Burst by 25% and decreases the cooldown by 1 second.
+Regenerative Microbes: Symbiote's Carapace heals the target for 68 (33 + 4% per level) Health per second.
+Ballistospores: Increases Toxic Nest's range to global and increases duration by 20%.
+Prolific Dispersal: Reduces the cooldown of Toxic Nest by 2 seconds and adds 2 additional charges.
+Sustained Carapace: Increases the duration of Symbiote's Carapace by 50% and allows it to persist after Symbiote ends.
+Adrenal Overload: Symbiote host gains 25% increased Attack Speed.
+Needlespine: Increases the damage and range of Symbiote's Stab by 20%.
+Vile Nest: Toxic Nests slow enemy Movement Speed by 40% for 3 seconds.
+Networked Carapace: Using Symbiote's Carapace also applies a Shield to all nearby allied Minions and Mercenaries.
+Calldown: MULE: Activate to calldown a Mule that repairs Structures, one at a time, near target point for 40 seconds, healing for 100 Health every 1 second. Grants 1 ammo every 3 seconds.
+Ultimate Evolution: Clone target allied Hero and control it for 20 seconds. Abathur has perfected the clone, granting it 20% Ability Power, 20% bonus Attack Damage, and 10% bonus Movement Speed. Cannot use their Heroic Ability.
+Evolve Monstrosity: Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains 5% Health and 5% Basic Attack damage, stacking up to 40 times. The Monstrosity takes 50% less damage from non-Heroic enemies.Using Symbiote on the Monstrosity allows you to control it, in addition to Symbiote's normal benefits. This Ability can be reactivated to automatically cast Symbiote on your Monstrosity.
+Bombard Strain: Locust's Basic Attacks become a long-range siege attack that deal 70% more damage.
+Assault Strain: Locust Basic Attacks cleave for 50% damage, and explode on death for 149 (71 + 4% per level) damage.
+Spatial Efficiency: Symbiote's Stab gains 1 additional charge.
+Soma Transference: Symbiote's Spike Burst heals the host for 141 (67 + 4% per level) Health per enemy Hero hit.
+Locust Brood: Activate to spawn 3 Locusts at a nearby location.",
+Adrenaline Boost: Symbiote's Carapace increases the Movement Speed of the target by 40% for 3 seconds.
+Envenomed Spikes: Your Symbiote's Spike Burst also slows enemy Movement Speed by 40% for 2 seconds.
+Volatile Mutation: Ultimate Evolution clones and Monstrosities deal 250 (119 + 4% per level) damage to nearby enemies every 3 seconds and when they die.
+Locust Nest: Activate to create a nest that periodically spawns Locusts. Only one Locust Nest can be active at a time.",
+Hivemind: Symbiote creates an additional Symbiote on a nearby allied Hero. This Symbiote mimics the commands of the first, but does half damage and shielding.",
+Evolutionary Link: As long as the Ultimate Evolution is alive, the original target of the clone gains a Shield equal to 20% of their maximum Health. Refreshes every 5 seconds.
+Evolution Complete: Monstrosity gains the ability to Deep Tunnel to any visible location once every 30 seconds.
+Q: Stab - Shoots a spike towards target area that deals 248 (118 + 4% per level) damage to the first enemy it contacts. - Cooldown: 3 sec
+W: Spike Burst - Deals 244 (116 + 4% per level) damage to nearby enemies. - Cooldown: 6 sec
+E: Carapace - Shields the assisted ally for 329 (156 + 4% per level). Lasts for 8 seconds. - Cooldown: 12 sec

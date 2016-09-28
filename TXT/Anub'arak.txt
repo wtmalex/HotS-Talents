@@ -1,0 +1,39 @@
+Melee Warrior
+HP: 2026 (+4 per level)
+HP Regen: 4.219 (+4 per level)
+Mana: 500
+Mana Regen: 3
+Attack Damage: 99 (+4 per level)
+Attack Speed: 1
+Q: Imaple (65 mana) - Deals 220 (104 + 4% per level) damage. Stuns for 1 second. - Cooldown: 12 sec
+W: Harden Carapace (30 mana) - Gain a Shield that absorbs 658 (313 + 4% per level) damage over 3 seconds. - Cooldown: 7 sec
+E: Burrow Charge (65 mana) - Burrows to location, dealing 235 (112 + 4% per level) damage and briefly stunning enemies in a small area upon surfacing. Can reactivate the Ability to surface early. - Cooldown: 16 sec
+R1: Locust Swarm (75 mana) - Deal 145 (69 + 4% per level) damage per second in an area around yourself. Each enemy damaged heals you for 40 (19 + 4% per level) Health. Lasts 8 seconds. - Cooldown: 100 sec
+R2: Cocoon (70 mana) - Wraps target enemy Hero in a cocoon, rendering them unable to act or be targeted for 8 seconds. Allies of the Hero can attack the cocoon to break it and free them early. - Cooldown: 60 sec
+D: Scarab Host - Spawn a Beetle at your location whenever you use an Ability. Beetles last for 8 seconds, attacking nearby enemies for 44 (21 + 4% per level) damage.
+Dampen Magic: Upon taking Ability Damage, reduce that damage and further Ability Damage by 50% for 1.5 seconds. Can only trigger once every 8 seconds.",
+Regeneration Master: Quest: Gathering a Regeneration Globe increases your Health Regeneration by 1 per second, up to 30. Reward: After gathering 30 Regeneration Globes, you also gain 500 Health.
+Assault Scarab: Increases the attack damage of spawned Beetles by 30%.
+Extended Spikes: Increases Impale's range and damage by 25%.
+Legion of Beetles: Automatically spawn a Beetle every 8 seconds. Can be toggled on and off.
+Locust Needles: Basic Attacks deal 60% of your Basic Attack Damage in an area around the target.
+Underking: Increases Burrow Charge range by 20% and damage by 100%.
+
+Chitinous Plating: While Harden Carapace is active, taking damage from enemy Abilities reduces its cooldown by 0.75 seconds, up to 3 seconds.
+Leeching Scarabs: Beetles heal you for 50% of their damage with each attack if you are nearby.
+Shed Exoskeleton: Using Harden Carapace increases your Movement Speed by 30% for 3 seconds.
+
+Locust Swarm: Deal 145 (69 + 4% per level) damage per second in an area around yourself. Each enemy damaged heals you for 40 (19 + 4% per level) Health. Lasts 8 seconds.
+Cocoon: Wraps target enemy Hero in a cocoon, rendering them unable to act or be targeted for 8 seconds. Allies of the Hero can attack the cocoon to break it and free them early.
+Burning Rage: Deal 23 damage per second to nearby enemies.
+Bed of Barbs: Create a bed of spikes along Impale's path that slows enemies by 30% and deals 101 (48 + 4% per level) damage per second. Spikes persist for 3.5 seconds.
+Urticating Spines: Casting Harden Carapace will also deal 176 (84 + 4% per level) damage to nearby enemies. Deals double damage against Heroes.
+
+Blood for Blood: Activate to deal 10% of target enemy Hero's Max Health and heal for twice that amount.
+Beetle, Juiced: Every 3rd Basic Attack against enemy Heroes spawns a Beetle.
+Epicenter: Increases Burrow Charge impact area by 85% and lowers the cooldown by 4 seconds for each Hero hit.
+
+Hardened Shield: Activate to reduce damage taken by 75% for 4 seconds.
+Rewind: Activate to reset the cooldowns of your Basic Abilities.
+Cryptweave: Staying near the Cocoon allows Anub'arak to extend the duration by up to 4 seconds per Cocoon.
+Hive Master: Gain a permanent Vampire Locust that attacks a nearby enemy every 3 seconds. The Vampire Locust deals 336 (160 + 4% per level) damage and returns to heal you for 82 (39 + 4% per level) health.
