@@ -1,0 +1,4 @@
+Survival Instincts: Increases Locust's Health by 50% and duration by 40%.
+Envenomed Nest: Toxic Nests deal 75% more damage over 3 seconds.
+Pressurized Glands: Increases the range of Symbiote's Spike Burst by 25% and decreases the cooldown by 1 second.
+Regenerative Microbes: Symbiote's Carapace heals the target for 68 (33 + 4% per level) Health per second.

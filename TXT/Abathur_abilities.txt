@@ -1,0 +1,6 @@
+Q: Symbiote - Assist another allied Unit or Combat Structure, allowing you to shield them and use new Abilities.Cannot be used on another Hero's Summons. - Cooldown: 4 sec
+W: Toxic Nest - Spawn a mine that becomes active after a short time. Deals 336 (160 + 4% per level) damage and reveals the enemy for 4 seconds. Lasts 90 seconds. - Cooldown: 10 sec
+E: -
+R1: Evolve Monstrosity - Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains 5% Health and 5% Basic Attack damage, stacking up to 40 times. The Monstrosity takes 50% less damage from non-Heroic enemies.Using Symbiote on the Monstrosity allows you to control it, in addition to Symbiote's normal benefits. This Ability can be reactivated to automatically cast Symbiote on your Monstrosity. - Cooldown: 90 sec
+R2: Ultimate Evolution - Clone target allied Hero and control it for 20 seconds. Abathur has perfected the clone, granting it 20% Ability Power, 20% bonus Attack Damage, and 10% bonus Movement Speed. Cannot use their Heroic Ability. - Cooldown: 50 sec
+D: Locust Strain - Spawns a Locust to attack down the nearest lane every 15 seconds. Locusts last for 25 seconds. - Cooldown: 15 sec
