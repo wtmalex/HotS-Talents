@@ -4,14 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
+public class MainClass {
 
-public class MainClass extends Application {
-
+	//TODO: make a class whose duty is to read data from TXT sources
 	public void readAndStore(String heroName) {
 		String test = "TXT\\" + heroName + ".txt";
 		System.out.println(test);
@@ -121,14 +116,14 @@ public class MainClass extends Application {
 		try {
 			File myFile = new File(test);
 			FileReader fileReader = new FileReader(myFile);
-			BufferedReader reader = new BufferedReader(fileReader); 
-			 
-			  while((line=reader.readLine())!=null){
-			 
-			   stringBuffer.append(line).append("\n");
-			  }
-			   
-			  //System.out.println(stringBuffer);
+			BufferedReader reader = new BufferedReader(fileReader);
+
+			while ((line = reader.readLine()) != null) {
+
+				stringBuffer.append(line).append("\n");
+			}
+
+			// System.out.println(stringBuffer);
 		} catch (Exception e) {
 			System.out.println("RIP FAGIT");
 			e.printStackTrace();
@@ -136,23 +131,12 @@ public class MainClass extends Application {
 		line = stringBuffer.toString();
 		return line;
 	}
-	
-	
+
 	public static void main(String[] args) {
-		Application.launch(args);
+		MyGUI mygui = new MyGUI();
+		mygui.startThisShit(args);
 
 	}
 
-	@Override
-	public void start(Stage stage) throws Exception {
-		Parent root = FXMLLoader.load(getClass().getResource("Hots_UI.fxml"));
-		System.out.println("asd"); // I NEED FOR BECAUSE OF REASONS FFS THIS
-									// DOESNT MAKE ANY SENSE
-		//readTestText();
-		stage.setTitle("FXML Welcome");
-		stage.setScene(new Scene(root, 800, 600));
-		stage.setResizable(false);
-		stage.show();
-
-	}
+	
 }
