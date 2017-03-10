@@ -1,5 +1,7 @@
 package randomName;
 
+import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -10,8 +12,6 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class MyGUI extends Application {
@@ -25,10 +25,10 @@ public class MyGUI extends Application {
 	private Button buttonBack, buttonLevel1, buttonLevel4, buttonLevel7, buttonLevel10, buttonLevel13, buttonLevel16,
 			buttonLevel20;
 
-	@FXML
-	private AnchorPane GuiAnchor, AsdasdAnchor;
+	//@FXML
+	//private AnchorPane GuiAnchor, AsdasdAnchor;
 
-	@FXML
+	/*@FXML
 	private ListView<String> heroNames;
 	ObservableList<String> names = FXCollections.observableArrayList("Abathur", "Alarak", "Anub'arak", "Artanis",
 			"Arthas", "Auriel", "Azmodan", "Brightwing", "Chen", "Cho", "Chromie", "Dehaka", "Diablo", "E.T.C.",
@@ -36,7 +36,7 @@ public class MyGUI extends Application {
 			"Kharazim", "Leoric", "Li Li", "Li-Ming", "Lt. Morales", "Lunara", "Malfurion", "Medivh", "Muradin",
 			"Murky", "Nazeboo", "Nova", "Raynor", "Reghar", "Rexxar", "Sgt. Hammer", "Sonya", "Stitches", "Sylvanas",
 			"Tassadar", "The Butcher", "The Lost Vikings", "Thrall", "Tracer", "Tychus", "Tyrael", "Tyrande", "Uther",
-			"Valla", "Xul", "Zagara", "Zarya", "Zeratul");
+			"Valla", "Xul", "Zagara", "Zarya", "Zeratul"); */
 
 	@FXML
 	ObservableList<String> buttons = FXCollections.observableArrayList("button00", "button01", "button02", "button03",
@@ -51,10 +51,7 @@ public class MyGUI extends Application {
 	@Override
 	public void start(Stage stage) throws Exception {
 		Parent root = FXMLLoader.load(getClass().getResource("HotS_UI.fxml"));
-		// Parent secroot =
-		// FXMLLoader.load(getClass().getResource("Abilities_UI.fxml"));
 		scene1 = new Scene(root, 900, 700);
-		// scene2 = new Scene(secroot, 900,700);
 
 		System.out.println("asd"); // I NEED FOR BECAUSE OF REASONS FFS
 
@@ -68,79 +65,64 @@ public class MyGUI extends Application {
 		// From the default UI to the Abilities
 		if (buttons.contains(((Button) e.getSource()).getId())) {
 			System.out.print("Currently in Abilities_UI with " + ((Button) e.getSource()).getId() + "\n");
-			Parent secRoot = FXMLLoader.load(getClass().getResource("Abilities_UI.fxml"));
-			scene2 = new Scene(secRoot, 900, 700);
-			Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
-			app_stage.setScene(scene2);
+			WindowInit(scene2, e, "Abilities_UI.fxml");
 
 			// To Level 1 Talents
 		} else if (e.getSource() == buttonLevel1) {
 			System.out.print("Currently in Level 1 with " + ((Button) e.getSource()).getId() + "\n");
-			Parent thirdRoot = FXMLLoader.load(getClass().getResource("Level1_UI.fxml"));
-			scene3 = new Scene(thirdRoot, 900, 700);
-			Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
-			app_stage.setScene(scene3);
+			WindowInit(scene3, e, "Level1_UI.fxml");
 
 			// To Level 4 Talents
 		} else if (e.getSource() == buttonLevel4) {
 			System.out.print("Currently in Level 4 with " + ((Button) e.getSource()).getId() + "\n");
-			Parent fourthRoot = FXMLLoader.load(getClass().getResource("Level4_UI.fxml"));
-			scene4 = new Scene(fourthRoot, 900, 700);
-			Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
-			app_stage.setScene(scene4);
+			WindowInit(scene4, e, "Level4_UI.fxml");
 
 			// To Level 7 Talents
 		} else if (e.getSource() == buttonLevel7) {
 			System.out.print("Currently in Level 7 with " + ((Button) e.getSource()).getId() + "\n");
-			Parent fifthRoot = FXMLLoader.load(getClass().getResource("Level7_UI.fxml"));
-			scene5 = new Scene(fifthRoot, 900, 700);
-			Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
-			app_stage.setScene(scene5);
+			WindowInit(scene5, e, "Level7_UI.fxml");
 
 			// To Level 10 Talents
 		} else if (e.getSource() == buttonLevel10) {
 			System.out.print("Currently in Level 10 with " + ((Button) e.getSource()).getId() + "\n");
-			Parent sixthRoot = FXMLLoader.load(getClass().getResource("Level10_UI.fxml"));
-			scene6 = new Scene(sixthRoot, 900, 700);
-			Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
-			app_stage.setScene(scene6);
+			WindowInit(scene6, e, "Level10_UI.fxml");
 
 			// To Level 13 Talents
 		} else if (e.getSource() == buttonLevel13) {
 			System.out.print("Currently in Level 13 with " + ((Button) e.getSource()).getId() + "\n");
-			Parent seventhRoot = FXMLLoader.load(getClass().getResource("Level13_UI.fxml"));
-			scene7 = new Scene(seventhRoot, 900, 700);
-			Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
-			app_stage.setScene(scene7);
+			WindowInit(scene7, e, "Level13_UI.fxml");
 
 			// To Level 16 Talents
 		} else if (e.getSource() == buttonLevel16) {
 			System.out.print("Currently in Level 16 with " + ((Button) e.getSource()).getId() + "\n");
-			Parent eighthRoot = FXMLLoader.load(getClass().getResource("Level16_UI.fxml"));
-			scene8 = new Scene(eighthRoot, 900, 700);
-			Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
-			app_stage.setScene(scene8);
+			WindowInit(scene8, e, "Level16_UI.fxml");
 
 			// To Level 20 Talents
 		} else if (e.getSource() == buttonLevel20) {
 			System.out.print("Currently in Level 20 with " + ((Button) e.getSource()).getId() + "\n");
-			Parent ninthRoot = FXMLLoader.load(getClass().getResource("Level20_UI.fxml"));
-			scene9 = new Scene(ninthRoot, 900, 700);
-			Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
-			app_stage.setScene(scene9);
+			WindowInit(scene9, e, "Level20_UI.fxml");
 
 			// Back to Default UI
 		} else if (e.getSource() == buttonBack) {
 			System.out.print("Currently in HotS_UI with " + ((Button) e.getSource()).getId() + "\n");
-			Parent secroot = FXMLLoader.load(getClass().getResource("HotS_UI.fxml"));
-			scene1 = new Scene(secroot, 900, 700);
-			Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
-
-			app_stage.setScene(scene1);
+			WindowInit(scene1, e, "HotS_UI.fxml");
 		}
 	}
 
 	public void startThisShit(String[] args) {
 		Application.launch(args);
+	}
+	
+	public void WindowInit(Scene newscene, ActionEvent e, String newWindow) {
+		try {
+			Parent root = FXMLLoader.load(getClass().getResource(newWindow));
+			newscene = new Scene(root, 900, 700);
+			Stage app_stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+			app_stage.setScene(newscene);
+			
+		} catch (IOException exception) {
+			System.out.println("ERROR IN WindowInit!!!!!");
+			exception.printStackTrace();
+		}
 	}
 }
