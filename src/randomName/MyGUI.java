@@ -46,7 +46,7 @@ public class MyGUI extends Application {
 			"button34", "button35", "button36", "button37", "button38", "button40", "button41", "button42", "button43",
 			"button44", "button45", "button46", "button47", "button48", "button50", "button51", "button52", "button53",
 			"button54", "button55", "button56", "button57", "button58", "button60", "button61", "button62", "button63",
-			"button64", "button65", "button66", "button67", "button68");
+			"button64", "button65", "button66", "button67", "button68"); 
 
 	@Override
 	public void start(Stage stage) throws Exception {
