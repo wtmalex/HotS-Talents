@@ -1,6 +1,9 @@
 package randomName;
 
+import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileReader;
 
 public class Hero {
 	
@@ -60,9 +63,9 @@ public class Hero {
 		return level_20_talents;
 	}
 
-	public FileInputStream getInputStream() {
+	public FileInputStream getInputStream() { 
 		return inputStream;
-	}
+	}	//TODO: why do I need this?
 
 	public void setStats(String stats) {
 		this.stats = stats;
@@ -104,8 +107,102 @@ public class Hero {
 		this.level_20_talents = level_20_talents;
 	}
 
-	public void setInputStream(FileInputStream inputStream) {
+	public void setInputStream(FileInputStream inputStream) { 
 		this.inputStream = inputStream;
+	}	//TODO: why do I need this?
+	
+	private void readAndStore(String heroName) {
+		String test = "TXT\\" + heroName + ".txt";
+		System.out.println(test);
+
+		try {
+			File myFile = new File(test);
+			FileReader fileReader = new FileReader(myFile);
+			BufferedReader reader = new BufferedReader(fileReader); // "Connecting"
+																	// to the
+																	// TXT file
+
+			while (true) { // Read X lines, store it in line, and set to Hero
+							// object
+
+				String line = "Stats:\n";
+				for (int i = 0; i < 7; i++) {
+					line += reader.readLine() + "\n";
+				}
+				stats = line;
+
+				line = "Abilities:\n";
+				for (int i = 0; i < 6; i++) {
+					line += reader.readLine() + "\n";
+				}
+				abilities =line;
+
+				line = "Level 1:\n";
+				for (int i = 0; i < 4; i++) {
+					line += reader.readLine() + "\n";
+				}
+				level_1_talents = line;
+
+				line = "Level 4:\n";
+				for (int i = 0; i < 4; i++) {
+					line += reader.readLine() + "\n";
+				}
+				level_4_talents = line;
+
+				line = "Level 7:\n";
+				for (int i = 0; i < 4; i++) {
+					line += reader.readLine() + "\n";
+				}
+				level_4_talents = line;
+
+				line = "Level 10:\n";
+				for (int i = 0; i < 2; i++) {
+					line += reader.readLine() + "\n";
+				}
+				level_4_talents = line;
+
+				line = "Level 13:\n";
+				for (int i = 0; i < 4; i++) {
+					line += reader.readLine() + "\n";
+				}
+				level_4_talents = line;
+
+				line = "Level 16:\n";
+				for (int i = 0; i < 4; i++) {
+					line += reader.readLine() + "\n";
+				}
+				level_4_talents = line;
+
+				line = "Level 20:\n";
+				for (int i = 0; i < 4; i++) {
+					line += reader.readLine() + "\n";
+				}
+				level_4_talents = line;
+
+				line = "Extra:\n";
+				for (int i = 0; i < 3; i++) {
+					line += reader.readLine() + "\n";
+				}
+				extra = line;
+
+				reader.close();
+				break;
+			}
+		} catch (Exception e) {
+			System.out.println("RIP FAGIT");
+			e.printStackTrace();
+		}
+		System.out.println(stats);
+		// one.append(hero.getStats());
+		System.out.println(abilities);
+		System.out.println(level_1_talents);
+		System.out.println(level_4_talents);
+		System.out.println(level_4_talents);
+		System.out.println(level_4_talents);
+		System.out.println(level_4_talents);
+		System.out.println(level_4_talents);
+		System.out.println(level_4_talents);
+		System.out.println(extra); // TODO:if-et rakni ide (??????)
 	}
 	
 }

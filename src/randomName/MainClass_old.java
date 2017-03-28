@@ -1,5 +1,5 @@
 package randomName;
-/*
+
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -210,10 +210,9 @@ public class MainClass_old {
 	}
 	
 	
-	public static void main(String[] args) { 
+/*	public static void main(String[] args) { 
 		MainClass_old mainClass = new MainClass_old();
 		mainClass.run();						//the usual run()
 
-	}
+	} */
 }
-*/

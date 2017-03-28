@@ -1,10 +1,14 @@
 #button00 {
-  -fx-background-image: url("../../PNG/AbathurPortrait.png");
+  -fx-background-image: url("../../PNG_Heroes/AbathurPortrait.png");
 
   -fx-background-size:     cover;  
 }
 #button01 {
-  -fx-background-image: url("../../PNG/AlarakPortrait.png");
+  -fx-background-image: url("../../PNG_Heroes/AlarakPortrait.png");
 
   -fx-background-size:     cover;  
+}
+
+ImageAbilitiesQ {		/*inactive */
+	-fx-image: url("../../PNG_Spells/Abathur/Symbiote_Icon.png")
 }

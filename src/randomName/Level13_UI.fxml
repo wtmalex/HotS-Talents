@@ -15,15 +15,15 @@
                <children>
                   <ButtonBar layoutX="-1.0" prefHeight="112.0" prefWidth="1364.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
                     <buttons>
-                        <Button mnemonicParsing="false" text="Stats" />
-                        <Button mnemonicParsing="false" text="Abilities" />
-                        <Button fx:id="buttonLevel1" mnemonicParsing="false" onAction="#ButtonClicked" text="Level 1" />
-                        <Button mnemonicParsing="false" text="Level 4" />
-                        <Button mnemonicParsing="false" text="Level 7" />
-                      <Button mnemonicParsing="false" text="Level 10" />
-                        <Button mnemonicParsing="false" text="Level 13" />
-                        <Button mnemonicParsing="false" text="Level 16" />
-                        <Button fx:id="button2" mnemonicParsing="false" onAction="#ButtonClicked" text="Level 20" />
+                        <Button fx:id="buttonStats" mnemonicParsing="false" onAction="#SwitchLevel" text="Stats" />
+                        <Button fx:id="buttonAbilities" mnemonicParsing="false" onAction="#SwitchLevel" text="Abilities" />
+                        <Button fx:id="buttonLevel1" mnemonicParsing="false" onAction="#SwitchLevel" text="Level 1" />
+                        <Button fx:id="buttonLevel4" mnemonicParsing="false" onAction="#SwitchLevel" text="Level 4" />
+                        <Button fx:id="buttonLevel7" mnemonicParsing="false" onAction="#SwitchLevel" text="Level 7" />
+                      	<Button fx:id="buttonLevel10" mnemonicParsing="false" onAction="#SwitchLevel" text="Level 10" />
+                        <Button fx:id="buttonLevel13" mnemonicParsing="false" onAction="#SwitchLevel" text="Level 13" />
+                        <Button fx:id="buttonLevel16" mnemonicParsing="false" onAction="#SwitchLevel" text="Level 16" />
+                        <Button fx:id="buttonLevel20" mnemonicParsing="false" onAction="#SwitchLevel" text="Level 20" />
                         <Button id="buttonBack" fx:id="buttonBack" mnemonicParsing="false" onAction="#ButtonClicked" text="Back" />
                     </buttons>
                   </ButtonBar>

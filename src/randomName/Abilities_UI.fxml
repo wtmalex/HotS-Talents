@@ -7,7 +7,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="AsdasdAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="randomName.MyGUI">
+<AnchorPane fx:id="AsdasdAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" stylesheets="@test.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="randomName.MyGUI">
    <children>
       <SplitPane dividerPositions="0.15" layoutX="278.0" layoutY="14.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -15,15 +15,15 @@
                <children>
                   <ButtonBar layoutX="-1.0" prefHeight="112.0" prefWidth="1364.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
                     <buttons>
-                        <Button mnemonicParsing="false" text="Stats" />
-                        <Button mnemonicParsing="false" text="Abilities" />
-                        <Button fx:id="buttonLevel1" mnemonicParsing="false" onAction="#ButtonClicked" text="Level 1" />
-                        <Button mnemonicParsing="false" text="Level 4" />
-                        <Button mnemonicParsing="false" text="Level 7" />
-                      <Button mnemonicParsing="false" text="Level 10" />
-                        <Button mnemonicParsing="false" text="Level 13" />
-                        <Button mnemonicParsing="false" text="Level 16" />
-                        <Button fx:id="button2" mnemonicParsing="false" onAction="#ButtonClicked" text="Level 20" />
+                        <Button fx:id="buttonStats" mnemonicParsing="false" onAction="#SwitchLevel" text="Stats" />
+                        <Button fx:id="buttonAbilities" mnemonicParsing="false" onAction="#SwitchLevel" text="Abilities" />
+                        <Button fx:id="buttonLevel1" mnemonicParsing="false" onAction="#SwitchLevel" text="Level 1" />
+                        <Button fx:id="buttonLevel4" mnemonicParsing="false" onAction="#SwitchLevel" text="Level 4" />
+                        <Button fx:id="buttonLevel7" mnemonicParsing="false" onAction="#SwitchLevel" text="Level 7" />
+                      	<Button fx:id="buttonLevel10" mnemonicParsing="false" onAction="#SwitchLevel" text="Level 10" />
+                        <Button fx:id="buttonLevel13" mnemonicParsing="false" onAction="#SwitchLevel" text="Level 13" />
+                        <Button fx:id="buttonLevel16" mnemonicParsing="false" onAction="#SwitchLevel" text="Level 16" />
+                        <Button fx:id="buttonLevel20" mnemonicParsing="false" onAction="#SwitchLevel" text="Level 20" />
                         <Button id="buttonBack" fx:id="buttonBack" mnemonicParsing="false" onAction="#ButtonClicked" text="Back" />
                     </buttons>
                   </ButtonBar>
@@ -31,16 +31,20 @@
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
-                  <TextArea id="TextAbilitiesQ" layoutX="249.0" layoutY="14.0" prefHeight="100.0" prefWidth="585.0" text="Box 1" />
-                  <TextArea id="TextAbilitiesW" layoutX="249.0" layoutY="123.0" prefHeight="100.0" prefWidth="585.0" text="Box 2" />
-                  <TextArea id="TextAbilitiesE" layoutX="249.0" layoutY="234.0" prefHeight="100.0" prefWidth="585.0" text="Box 3" />
-                  <TextArea id="TextAbilitiesR1" layoutX="249.0" layoutY="342.0" prefHeight="100.0" prefWidth="585.0" text="Box 4" />
-                  <TextArea id="TextAbilitiesR2" layoutX="249.0" layoutY="457.0" prefHeight="100.0" prefWidth="585.0" text="Box 5" />
-                  <ImageView id="ImageAbilitiesQ" fitHeight="100.0" fitWidth="100.0" layoutX="49.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView id="ImageAbilitiesW" fitHeight="100.0" fitWidth="100.0" layoutX="49.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView id="ImageAbilitiesE" fitHeight="100.0" fitWidth="100.0" layoutX="49.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView id="ImageAbilitiesR1" fitHeight="100.0" fitWidth="100.0" layoutX="49.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView id="ImageAbilitiesR2" fitHeight="100.0" fitWidth="100.0" layoutX="49.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true" />
+                  <TextArea id="TextAbilitiesQ" fx:id="TextAbilitiesQ" layoutX="249.0" layoutY="14.0" prefHeight="70.0" prefWidth="585.0" text="$Q" />
+                  <TextArea id="TextAbilitiesW" fx:id="TextAbilitiesW" layoutX="249.0" layoutY="88.0" prefHeight="70.0" prefWidth="585.0" text="$W" />
+                  <TextArea id="TextAbilitiesE" fx:id="TextAbilitiesE" layoutX="249.0" layoutY="164.0" prefHeight="70.0" prefWidth="585.0" text="$E" />
+                  <TextArea id="TextAbilitiesR1" fx:id="TextAbilitiesR1" layoutX="249.0" layoutY="243.0" prefHeight="70.0" prefWidth="585.0" text="$R1" />
+                  <TextArea id="TextAbilitiesR2" fx:id="TextAbilitiesR2" layoutX="249.0" layoutY="322.0" prefHeight="70.0" prefWidth="585.0" text="$R2" />
+                  <TextArea id="TextAbilitiesD" fx:id="TextAbilitiesD" layoutX="250.0" layoutY="401.0" prefHeight="70.0" prefWidth="585.0" text="$D" />
+                  <TextArea id="TextAbilitiesExtra" fx:id="TextAbilitiesExtra" layoutX="249.0" layoutY="487.0" prefHeight="70.0" prefWidth="585.0" text="Box Extra" />
+                  <ImageView id="ImageAbilitiesQ" fx:id="ImageAbilitiesQ" fitHeight="70.0" fitWidth="70.0" layoutX="79.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView id="ImageAbilitiesW" fx:id="ImageAbilitiesW" fitHeight="70.0" fitWidth="70.0" layoutX="79.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView id="ImageAbilitiesE" fx:id="ImageAbilitiesE" fitHeight="70.0" fitWidth="70.0" layoutX="82.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView id="ImageAbilitiesR1" fx:id="ImageAbilitiesR1" fitHeight="70.0" fitWidth="70.0" layoutX="82.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView id="ImageAbilitiesR2" fx:id="ImageAbilitiesR2" fitHeight="70.0" fitWidth="70.0" layoutX="82.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView id="ImageAbilitiesD" fx:id="ImageAbilitiesD" fitHeight="70.0" fitWidth="70.0" layoutX="82.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView id="ImageAbilitiesExtra" fx:id="ImageAbilitiesExtra" fitHeight="70.0" fitWidth="70.0" layoutX="79.0" layoutY="487.0" pickOnBounds="true" preserveRatio="true" />
                </children></AnchorPane>
         </items>
       </SplitPane>
